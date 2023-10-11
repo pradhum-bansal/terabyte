@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import arrow from '../assets/images/arrow.svg'
 import Counter from "../components/counter";
 import CarouselComponent from "../components/carousel";
@@ -19,10 +19,12 @@ import Testimonial1 from '../assets/images/testimonial1.svg';
 import Testimonial2 from '../assets/images/testimonial2.svg';
 import testimonialbg from '../assets/images/testimonial_bg.svg'
 import { useNavigate } from "react-router";
+import { TestimonialCards } from "../const";
 
 
 const Home = () => {
   const navigate = useNavigate();
+  const [testimonialCount, setTestimonialCount] = useState(0)
     return (
       <div className="home">
         <div className="hero_container">
@@ -98,29 +100,53 @@ const Home = () => {
             <img src={testimonialbg} alt="..." />
             Testimonial
           </div>
-          <div className="testimonial_container">
-            <div>
-              <img src={Testimonial} alt="" />
-            </div>
-            <div>
-              <img src={Testimonial1} alt="" />
-            </div>
-            <div className="description">
-              Lorem ipsum dolor sit amet consectetur. Massa sed dapibus
-              adipiscing felis at. Integer at dictum ullamcorper magna nam eget.
-              Elementum semper ultrices quam elementum dignissim etiam velit
-              molestie diam. Netus arcu varius lectus dignissim mollis lorem
-              pulvinar tortor arcu.
-              <div className="heading">Carolyn Willms</div>
-              <div className="designation">Global Accountability Officer</div>
-            </div>
-            <div>
-              <img src={Testimonial2} alt="" />
-            </div>
-          </div>
+          {TestimonialCards.map(
+            (item, index) =>
+              index === testimonialCount && (
+                <>
+                  <div className="testimonial_container">
+                    <div>
+                      <img src={item.image1} alt="" />
+                    </div>
+                    <div>
+                      <img src={item.image2} alt="" />
+                    </div>
+                    <div className="description">
+                      {item.description}
+                      <div className="heading">{item.author}</div>
+                      <div className="designation">{item.designation}</div>
+                    </div>
+                    <div>
+                      <img src={item.image3} alt="" />
+                    </div>
+                  </div>
+                </>
+              )
+          )}
+
           <div className="d-flex justify-content-between container px-5 col-8">
-            <button className="testimonial_button">Previous</button>
-            <button className="testimonial_button">Next</button>
+            <button
+              className="testimonial_button"
+              onClick={() =>
+                setTestimonialCount(
+                  testimonialCount > 0 ? testimonialCount - 1 : 0
+                )
+              }
+            >
+              Previous
+            </button>
+            <button
+              className="testimonial_button"
+              onClick={() =>
+                setTestimonialCount(
+                  testimonialCount < TestimonialCards.length - 1 
+                    ? testimonialCount + 1
+                    : TestimonialCards.length - 1
+                )
+              }
+            >
+              Next
+            </button>
           </div>
         </div>
         <div>

@@ -2,6 +2,8 @@ import React from "react";
 import hero from '../assets/images/requestbanner.svg';
 import '../assets/scss/request_demo.scss';
 import arrow from '../assets/images/submit-arrow.svg';
+import Select from 'react-select';
+import { SelectCustomStyles } from "../const";
 const RequestDemo = () => {
     return (
       <div className="home">
@@ -36,11 +38,29 @@ const RequestDemo = () => {
             <div className="col-12 row px-5">
               <div className="col-6">
                 <div className="label">Region*</div>
-                <select className="w-100" />
+                <Select
+                  placeholder=""
+                  options={[]}
+                  components={{
+                    IndicatorSeparator() {
+                      return <></>;
+                    },
+                  }}
+                  styles={SelectCustomStyles}
+                />
               </div>
               <div className="col-6">
                 <div className="label">Industry Type*</div>
-                <select className="w-100" />
+                <Select
+                  placeholder=""
+                  options={[]}
+                  components={{
+                    IndicatorSeparator() {
+                      return <></>;
+                    },
+                  }}
+                  styles={SelectCustomStyles}
+                />
               </div>
             </div>
             <div className="col-12 row px-5">
@@ -48,8 +68,10 @@ const RequestDemo = () => {
               <input type="text" className="w-100" />
             </div>
             <div>
-                <button className="submit_button">Submit
-                <img src={arrow} width={24} height={24} alt="icon"/></button>
+              <button className="submit_button">
+                Submit
+                <img src={arrow} width={24} height={24} alt="icon" />
+              </button>
             </div>
           </div>
         </div>
