@@ -2,8 +2,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Ceo from '../assets/images/CEO.png'
-import Team from '../assets/images/Team.png';
-import Team2 from "../assets/images/Team2.png";
+import left from "../assets/images/carousel-left.svg";
+import right from "../assets/images/carousel-right.svg";
 
 const TeamCarousel = () => {
     return (
@@ -13,6 +13,8 @@ const TeamCarousel = () => {
           variant="dark"
           controls={true}
           indicators={false}
+          prevIcon={<img src={left} alt="left" />}
+          nextIcon={<img src={right} alt="left" />}
         >
           <Carousel.Item>
             <div className="d-flex row">

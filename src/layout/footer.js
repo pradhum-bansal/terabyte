@@ -60,9 +60,9 @@ const Footer = () => {
           </div>
 
           <div className='links_conteiner'>
-            <div className='link'>Privacy Policy</div>
+            <div className='link'>Terms</div>
 
-            <div className='link'>Terms and Conditions</div>
+            <div className='link'>Privacy</div>
 
             <div className='link'>Cookies</div>
           </div>

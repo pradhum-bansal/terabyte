@@ -3,20 +3,21 @@ import arrow from '../assets/images/arrow.svg'
 import Counter from "../components/counter";
 import CarouselComponent from "../components/carousel";
 import ServiceCards from "../components/service-cards";
-import logo9 from '../assets/images/7-Eleven-Logo.png';
-import logo1 from "../assets/images/first-republic-bank.png";
-import logo8 from "../assets/images/Universal-Pictures.png";
-import logo3 from "../assets/images/toyota.png";
-import logo2 from "../assets/images/Ford-Logo.png";
-import logo4 from "../assets/images/Gap-Logo.png";
-import logo5 from "../assets/images/Infosys_logo.png";
-import logo6 from "../assets/images/Bank-of-America.png";
-import logo7 from "../assets/images/JP-Morgan-Chase-Logo.png";
-import hero from '../assets/images/Hero-img.png'
+import logo9 from '../assets/images/Logos-8.svg';
+import logo1 from "../assets/images/Logos.svg";
+import logo8 from "../assets/images/Logos-7.svg";
+import logo3 from "../assets/images/Logos-2.svg";
+import logo2 from "../assets/images/Logos-1.svg";
+import logo4 from "../assets/images/Logos-3.svg";
+import logo5 from "../assets/images/Logos-5.svg";
+import logo6 from "../assets/images/Logos-4.svg";
+import logo7 from "../assets/images/Logos-6.svg";
+import hero from '../assets/images/Hero-img.svg'
 import TeamCarousel from "../components/team-carousel";
 import Testimonial from '../assets/images/testimonial.svg';
 import Testimonial1 from '../assets/images/testimonial1.svg';
 import Testimonial2 from '../assets/images/testimonial2.svg';
+import testimonialbg from '../assets/images/testimonial_bg.svg'
 import { useNavigate } from "react-router";
 
 
@@ -90,6 +91,10 @@ const Home = () => {
           </div>
         </div>
         <div className="container testimonial-wrapper">
+          <div className="heading">
+            <img src={testimonialbg} alt="..."/>
+              Testimonial
+            </div>
           <div className="testimonial_container">
             <div>
               <img src={Testimonial} alt="" />

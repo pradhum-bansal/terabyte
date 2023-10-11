@@ -1,5 +1,5 @@
 import React from "react";
-import hero from '../assets/images/Demo.svg';
+import hero from '../assets/images/requestbanner.svg';
 import '../assets/scss/request_demo.scss';
 import arrow from '../assets/images/submit-arrow.svg';
 const RequestDemo = () => {
@@ -7,7 +7,7 @@ const RequestDemo = () => {
       <div className="home">
         <div className="hero_container">
           <div className="container d-flex justify-content-center">
-            <img src={hero} alt="hero" width={600} height={600} />
+            <img src={hero} alt="hero" width={500} height={300} />
           </div>
         </div>
         <div className="container py-5">

@@ -102,7 +102,14 @@
             font-weight: 400;
             line-height: normal;
             text-align: left;
+            padding: 25px 10px;
         }
+        li::marker 
+            {
+                font-size: 2rem;
+                font-weight: bolder;
+                color: #4C94FF;
+            }
         .carousel-indicators{
             button{
             height: 23px !important;
@@ -164,6 +171,9 @@
         width: 100%;
         display: flex;
         justify-content: end;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 8%;
     }
 }
 .our_services_container{
@@ -234,24 +244,32 @@
     padding: 90px 20px;
     .left_container{
         color: #FFF;
-        font-size: 40px;
+        font-size: 60px;
         font-style: normal;
         font-weight: 700;
         line-height: 145%; /* 87.001px */
         letter-spacing: 3px;
         margin: auto;
+        text-align: left;
     }
     .right_container{
         display: flex;
         justify-content: center;
         img{
-            // width: 281.253px;
-            // height: auto;
+            width: 281.253px;
+            height: auto;
         }
     }
 }
 .testimonial-wrapper{
     padding: 100px 0;
+    .heading{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0 90px;
+        gap: 20px;
+    }
 }
 .testimonial_container{
     display: flex;
