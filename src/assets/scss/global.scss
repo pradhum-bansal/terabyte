@@ -187,12 +187,13 @@
     }
     .service_cards_container{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 24px;
-    padding: 50px 10px;
+    padding: 80px 10px;
     .cards{
         border-radius: 12px;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.50);
+        width: 25%;
         .card_header{
             color: #FFF;
             font-size: 28px;
@@ -224,15 +225,16 @@
             border-radius: 8px;
             background: #F44A00;
             display: flex;
-            padding: 8px;
+            padding: 16px 12px;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            width: 100px;
             height: 24px;
             box-shadow: none;
             border: none;
+            color: #fff;
         }
+
         
     }
 }
@@ -244,7 +246,7 @@
     padding: 90px 20px;
     .left_container{
         color: #FFF;
-        font-size: 60px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: 145%; /* 87.001px */
@@ -256,19 +258,25 @@
         display: flex;
         justify-content: center;
         img{
-            width: 281.253px;
+            width: 200px;
             height: auto;
         }
     }
 }
 .testimonial-wrapper{
     padding: 100px 0;
-    .heading{
+    .test_heading{
         display: flex;
         justify-content: end;
         align-items: center;
         padding: 0 90px;
         gap: 20px;
+        color: #000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: left;
     }
 }
 .testimonial_container{
@@ -317,3 +325,15 @@
         line-height: 26px;
         color: #FFF;
     }
+.carousel-indicators{
+    button{
+    height: 23px !important;
+    width: 23px !important;
+    border-radius: 50%;
+    background-color: #000 !important;
+    opacity: 1 !important;
+    }
+    .active{
+    background-color: #F44A00 !important;
+    }
+}

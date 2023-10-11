@@ -36,7 +36,10 @@ const Home = () => {
               school management systems, CRM, and laboratory management
               software.
             </div>
-            <button className="demo_button" onClick={()=>navigate('/request-demo')}>
+            <button
+              className="demo_button"
+              onClick={() => navigate("/request-demo")}
+            >
               Book a Demo
               <img src={arrow} alt="arrow" />
             </button>
@@ -91,10 +94,10 @@ const Home = () => {
           </div>
         </div>
         <div className="container testimonial-wrapper">
-          <div className="heading">
-            <img src={testimonialbg} alt="..."/>
-              Testimonial
-            </div>
+          <div className="test_heading">
+            <img src={testimonialbg} alt="..." />
+            Testimonial
+          </div>
           <div className="testimonial_container">
             <div>
               <img src={Testimonial} alt="" />
