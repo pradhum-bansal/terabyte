@@ -1,16 +1,16 @@
 import './App.css';
 import Header from './layout/header';
-import Home from './pages/home';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './assets/scss/global.scss';
 import Footer from './layout/footer';
-
+import RoutesPath from './route/route';
 
 function App() {
   return (
     <div className="App">
+
       <Header/>
-      <Home/>
+      <RoutesPath/>
       <Footer/>
     </div>
   );

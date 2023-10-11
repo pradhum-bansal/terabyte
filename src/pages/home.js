@@ -16,10 +16,12 @@ import hero from '../assets/images/Hero-img.png'
 import TeamCarousel from "../components/team-carousel";
 import Testimonial from '../assets/images/testimonial.svg';
 import Testimonial1 from '../assets/images/testimonial1.svg';
-import Testimonial2 from '../assets/images/testimonial2.svg'
+import Testimonial2 from '../assets/images/testimonial2.svg';
+import { useNavigate } from "react-router";
 
 
 const Home = () => {
+  const navigate = useNavigate();
     return (
       <div className="home">
         <div className="hero_container">
@@ -33,7 +35,7 @@ const Home = () => {
               school management systems, CRM, and laboratory management
               software.
             </div>
-            <button className="demo_button">
+            <button className="demo_button" onClick={()=>navigate('/request-demo')}>
               Book a Demo
               <img src={arrow} alt="arrow" />
             </button>
