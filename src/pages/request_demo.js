@@ -1,5 +1,5 @@
 import React from "react";
-import hero from '../assets/images/Hero-img.png';
+import hero from '../assets/images/Demo.svg';
 import '../assets/scss/request_demo.scss';
 import arrow from '../assets/images/submit-arrow.svg';
 const RequestDemo = () => {
