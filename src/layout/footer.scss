@@ -1,0 +1,99 @@
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 30px;
+    .footer_route_list{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+        .route_list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            gap: 4px;
+            .route_heading , .route{
+                color: #0A142F;
+                font-size: 21.284px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 37.247px;
+                text-align: left;
+            }
+            .route{
+                opacity: 0.5;
+                font-weight: 400;
+            }
+        }
+    }
+    .subscribe_card{
+        background: rgba(32, 60, 134, 0.05);
+        width: 350px;
+        height: 350px;
+        padding: 40px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .card_heading{
+            color: #0A142F;
+            font-size: 21.284px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 37.247px;
+            text-align: left;
+        }
+
+        .card_description{
+            color: #0A142F;
+            font-size: 15.963px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.137px; /* 170% */
+            text-align: left;
+            opacity: 0.6;
+        }
+        input{
+            // border-radius: 7.981px;
+            // border: 1.995px solid #E7E8F2;
+            background: #FFF;
+            padding: 8px;
+            border: none;
+        }
+        .input_button{
+            border: none;
+            box-shadow: none;
+            background-color: #4C94FF;
+            height: auto;
+            width: 40px;
+        }
+    }
+    .divider{
+            border: 1.33px solid #0A142F;
+            opacity: 0.06;
+            background: #0A142F;
+            width: 100%;
+            
+        }
+}
+.social_cta_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* White */
+
+    color: #000;
+
+}
+.links_conteiner {
+    display: flex;
+    // align-items: center;
+    gap: 20px;
+
+}
