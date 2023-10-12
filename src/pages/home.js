@@ -12,14 +12,13 @@ import logo4 from "../assets/images/Logos-3.svg";
 import logo5 from "../assets/images/Logos-5.svg";
 import logo6 from "../assets/images/Logos-4.svg";
 import logo7 from "../assets/images/Logos-6.svg";
-import hero from '../assets/images/Hero-img.svg'
+import hero from '../assets/images/Hero-img.svg';
+import hero2 from '../assets/images/Hero-img-2.svg';
 import TeamCarousel from "../components/team-carousel";
-import Testimonial from '../assets/images/testimonial.svg';
-import Testimonial1 from '../assets/images/testimonial1.svg';
-import Testimonial2 from '../assets/images/testimonial2.svg';
-import testimonialbg from '../assets/images/testimonial_bg.svg'
+import testimonialbg from '../assets/images/testimonial_bg.svg';
 import { useNavigate } from "react-router";
 import { TestimonialCards } from "../const";
+import { Carousel } from "react-bootstrap";
 
 
 const Home = () => {
@@ -47,7 +46,19 @@ const Home = () => {
             </button>
           </div>
           <div className="col-sm-12 col-lg-5">
-            <img src={hero} alt="hero" className="hero_image" />
+            <Carousel
+              data-bs-theme="dark"
+              variant="dark"
+              controls={false}
+              indicators={false}
+            >
+              <Carousel.Item interval={1000}>
+                <img src={hero} className="hero_image" alt="..." />
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <img src={hero2} className="hero_image" alt="..." />
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
         <div>
@@ -116,7 +127,7 @@ const Home = () => {
                       <img src={item.image2} alt="" />
                     </div>
                     <div className="description">
-                          {item.description}
+                      {item.description}
                       <div className="heading">{item.author}</div>
                       <div className="designation">{item.designation}</div>
                     </div>
