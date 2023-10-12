@@ -1,6 +1,6 @@
-import Testimonial from './assets/images/testimonial.svg';
-import Testimonial1 from './assets/images/testimonial1.svg';
-import Testimonial2 from './assets/images/testimonial2.svg';
+import Testimonial from './assets/images/test1.svg';
+import Testimonial1 from './assets/images/test2.svg';
+import Testimonial2 from './assets/images/test3.svg';
 export const SelectCustomStyles = {
   control: (base, state) => ({
     ...base,

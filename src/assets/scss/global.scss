@@ -319,6 +319,23 @@
         line-height: normal;
         text-align: left;
     }
+    .testImage1{
+        width: 200px;
+        height: 300px;
+        border-radius: 8px;
+        background: linear-gradient(0deg, rgba(51, 124, 207, 0.50) 0%, rgba(51, 124, 207, 0.50) 100%), lightgray 50% / cover no-repeat;
+
+    }
+    .testImage2{
+        // width: 334.661px;
+        // height: 502.079px;
+        border-radius: 8px;
+        border-left: 8.924px solid #4C94FF;
+    }
+    .testImage3{
+        width: 200px;
+        height: 300px;
+    }
 }
 .testimonial_button{
         padding: 8px 24px;

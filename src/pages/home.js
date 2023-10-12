@@ -14,6 +14,7 @@ import logo6 from "../assets/images/Logos-4.svg";
 import logo7 from "../assets/images/Logos-6.svg";
 import hero from '../assets/images/Hero-img.svg';
 import hero2 from '../assets/images/Hero-img-2.svg';
+import hero1 from '../assets/images/Hero-img-1.svg';
 import TeamCarousel from "../components/team-carousel";
 import testimonialbg from '../assets/images/testimonial_bg.svg';
 import { useNavigate } from "react-router";
@@ -57,6 +58,9 @@ const Home = () => {
               </Carousel.Item>
               <Carousel.Item interval={1000}>
                 <img src={hero2} className="hero_image" alt="..." />
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <img src={hero1} className="hero_image" alt="..." />
               </Carousel.Item>
             </Carousel>
           </div>
@@ -117,14 +121,17 @@ const Home = () => {
                 <>
                   <div className="testimonial_container">
                     <div>
-                      <img
-                        src={item.image1}
-                        alt=""
-                        className="d-none d-md-block"
-                      />
+                      <div
+                        className="d-none d-md-block testImage1"
+                        style={{
+                          background: `linear-gradient(0deg, rgba(51, 124, 207, 0.50) 0%, rgba(51, 124, 207, 0.50) 100%), url(${item.image1}), lightgray 50% / cover no-repeat`,
+                          backgroundSize: "200px 300px",
+                          backgroundRepeat: 'no-repeat'
+                        }}
+                      ></div>
                     </div>
                     <div>
-                      <img src={item.image2} alt="" />
+                      <img src={item.image2} alt="" className="testImage2" />
                     </div>
                     <div className="description">
                       {item.description}
@@ -132,11 +139,13 @@ const Home = () => {
                       <div className="designation">{item.designation}</div>
                     </div>
                     <div>
-                      <img
-                        src={item.image3}
-                        className="d-none d-md-block"
-                        alt=""
-                      />
+                      <div
+                        style={{
+                          background: `linear-gradient(0deg, rgba(51, 124, 207, 0.50) 0%, rgba(51, 124, 207, 0.50) 100%), url(${item.image3}), lightgray 50% / cover no-repeat`,
+                          backgroundSize: "200px 300px",
+                        }}
+                        className="d-none d-md-block testImage3"
+                      ></div>
                     </div>
                   </div>
                 </>
