@@ -180,10 +180,15 @@
     .image{
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: center;
     }
     .carousel-control-next, .carousel-control-prev{
         width: 8%;
+    }
+    .blue_bg{
+        background: url('../images/bluecontainer.svg');
+        // background-size: 50%;
+        background-repeat: no-repeat;
     }
 }
 .our_services_container{

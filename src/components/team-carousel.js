@@ -19,13 +19,10 @@ const TeamCarousel = () => {
         >
           <Carousel.Item>
             <div className="d-flex row">
-              <div
-                className="col-12 col-lg-6 px-0"
-                style={{ background: "#4C94FF" }}
-              >
+              <div className="col-12 col-lg-6 px-0 blue_bg">
                 <div className="team_heading">Meet our Team</div>
                 <div className="image">
-                  <img src={Ceo} width={320} height={500} alt="." />
+                  <img src={Ceo} width={320} height={450} alt="." />
                 </div>
               </div>
               <div className="col-12 col-lg-6 right_container">
@@ -46,13 +43,10 @@ const TeamCarousel = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="d-flex row">
-              <div
-                className="col-12 col-lg-6 px-0"
-                style={{ background: "#4C94FF" }}
-              >
+              <div className="col-12 col-lg-6 px-0 blue_bg">
                 <div className="team_heading">Meet our Team</div>
                 <div className="image">
-                  <img src={Dp} width={320} height={500} alt="." />
+                  <img src={Dp} width={320} height={450} alt="." />
                 </div>
               </div>
               <div className="col-12 col-lg-6 right_container">
