@@ -54,6 +54,10 @@
             box-shadow: none;
             border: none;
         }
+        .hero_image{
+            width: 600px;
+            height: 400px;
+        }
     }
 }
 .counter_cards_container{
@@ -121,6 +125,10 @@
             .active{
             background-color: #F44A00 !important;
             }
+        }
+        .carousel_image{
+            width: 500px;
+            height: 500px;
         }
     }
 }
@@ -336,4 +344,150 @@
     .active{
     background-color: #F44A00 !important;
     }
+}
+
+@media only screen and (max-width: 768px){
+    .home{
+        .hero_container{
+            flex-direction: column !important;
+            padding: 40px 40px 0;
+            gap: 70px;
+            .hero_image{
+                width: 280px;
+                height: 140px;
+            }
+            .heading{
+                font-size: 18px;
+                text-align: center;
+            }
+            .sub_heading{
+                font-size: 16px;
+                text-align: center;
+                padding: 16px 0;
+            }
+            .demo_button{
+                display: flex;
+                padding: 10px 18px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                margin: auto;
+                font-size: 16px;
+            }
+        }
+        .counter_cards_container{
+            gap: 30px;
+            padding: 30px 0px;
+            .card{
+                width: 104px;
+                height: 89.85px;
+                .counter_image{
+                    width: 35.374px;
+                    height: 35.374px;
+                }
+                 .heading, .counter{
+                    font-size: 16px;
+                 }
+            }
+        }
+    }
+    .carousel-container{
+        .carousel{
+            min-height: 400px;
+            padding: 95px 10px;
+            .carousel_item_heading{
+                font-size: 18px;
+                text-align: center;
+            }
+            .carousel_image{
+                width: 318px;
+                height: 286.442px;
+            }
+            li{
+                font-size: 16px;
+                padding: 0 10px;
+                ::marker{
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .our_services_container{
+        .heading{
+            font-size: 18px;
+        }
+        .service_cards_container{
+            padding: 0;
+            .cards{
+                width: 287px;
+                .card_header{
+                    font-size: 18px;
+                }
+                .card_footer{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .client_container{
+        flex-direction: column;
+        padding: 40px 0;
+        .left_container{
+            font-size: 18px;
+            margin: 0;
+            text-align: center;
+        }
+        .right_container{
+            img{
+            width: 100px;
+            height: auto;
+            }
+        }
+    }
+    .testimonial_container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        .heading{
+            font-size: 18px;
+        }
+        .heading,.description,.designation{
+            text-align: center;
+        }
+    }
+    .testimonial-wrapper{
+        .test_heading{
+            font-size: 18px;
+            padding: 0px;
+            justify-content: center;
+        }
+    }
+
+    .carousel-container-team{
+        .carousel{
+            padding: 0px;
+        }
+        .team_name{
+            font-size: 18px;
+            padding-top: 24px;
+        }
+        .team_heading{
+            font-size: 40px;
+        }
+        .team_description{
+            padding-top: 16px;
+        }
+        .team_designation{
+            font-size: 18px;
+        }
+        .carousel-control-next, .carousel-control-prev{
+            width: 25%;
+        }
+        .indicator_img{
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
 }

@@ -13,18 +13,21 @@ const TeamCarousel = () => {
           variant="dark"
           controls={true}
           indicators={false}
-          prevIcon={<img src={left} alt="left" />}
-          nextIcon={<img src={right} alt="left" />}
+          prevIcon={<img src={left} className="indicator_img" alt="left" />}
+          nextIcon={<img src={right} className="indicator_img" alt="left" />}
         >
           <Carousel.Item>
             <div className="d-flex row">
-              <div className="col-6 px-0" style={{ background: "#4C94FF" }}>
+              <div
+                className="col-12 col-lg-6 px-0"
+                style={{ background: "#4C94FF" }}
+              >
                 <div className="team_heading">Meet our Team</div>
                 <div className="image">
                   <img src={Ceo} width={320} height={500} alt="." />
                 </div>
               </div>
-              <div className="col-6 right_container">
+              <div className="col-12 col-lg-6 right_container">
                 <div className="team_name">David Bell</div>
                 <div className="team_designation">CEO</div>
                 <div className="team_description">

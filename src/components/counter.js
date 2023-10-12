@@ -41,7 +41,7 @@ function CounterApp({ fixedValue }) {
 
   return (
     <div>
-      <p>{count}+</p>
+      <span>{count}+</span>
     </div>
   );
 }
@@ -52,7 +52,7 @@ const Counter = () => {
         {CARDS.map((item, index) => (
           <div className="card">
             <div className="image">
-              <img src={item.image} alt="abc" />
+              <img src={item.image} alt="abc" className="counter_image" />
             </div>
             <div className="counter"><CounterApp fixedValue={item.counter}/></div>
             <div className="heading">{item.heading}</div>

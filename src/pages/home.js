@@ -28,7 +28,7 @@ const Home = () => {
     return (
       <div className="home">
         <div className="hero_container">
-          <div className="container left_container col-7">
+          <div className="container left_container col-sm-12 col-lg-7 ">
             <label className="heading">
               Terabyte Innovations: Pioneering Software for a Connected Future
             </label>
@@ -46,8 +46,8 @@ const Home = () => {
               <img src={arrow} alt="arrow" />
             </button>
           </div>
-          <div className="col-5">
-            <img src={hero} alt="hero" width={600} height={400} />
+          <div className="col-sm-12 col-lg-5">
+            <img src={hero} alt="hero" className="hero_image" />
           </div>
         </div>
         <div>
@@ -61,11 +61,11 @@ const Home = () => {
           <ServiceCards />
         </div>
         <div className="client_container d-flex">
-          <div className="col-4 left_container">
+          <div className="col-12 col-md-4 left_container">
             Empowering Success Together: Partnering with Countless Clients to
             Achieve Remarkable Milestones
           </div>
-          <div className="col-8 d-flex justify-content-between flex-wrap right_container">
+          <div className="col-12 col-md-8 d-flex justify-content-between flex-wrap right_container">
             <div className="col-4 py-5 m-auto">
               <img src={logo1} alt="logo1" />
             </div>
@@ -106,25 +106,33 @@ const Home = () => {
                 <>
                   <div className="testimonial_container">
                     <div>
-                      <img src={item.image1} alt="" />
+                      <img
+                        src={item.image1}
+                        alt=""
+                        className="d-none d-md-block"
+                      />
                     </div>
                     <div>
                       <img src={item.image2} alt="" />
                     </div>
                     <div className="description">
-                      {item.description}
+                          {item.description}
                       <div className="heading">{item.author}</div>
                       <div className="designation">{item.designation}</div>
                     </div>
                     <div>
-                      <img src={item.image3} alt="" />
+                      <img
+                        src={item.image3}
+                        className="d-none d-md-block"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </>
               )
           )}
 
-          <div className="d-flex justify-content-between container px-5 col-8">
+          <div className="d-flex justify-content-between container px-5 col-12 col-lg-8">
             <button
               className="testimonial_button"
               onClick={() =>
@@ -139,7 +147,7 @@ const Home = () => {
               className="testimonial_button"
               onClick={() =>
                 setTestimonialCount(
-                  testimonialCount < TestimonialCards.length - 1 
+                  testimonialCount < TestimonialCards.length - 1
                     ? testimonialCount + 1
                     : TestimonialCards.length - 1
                 )
