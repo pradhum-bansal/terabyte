@@ -10,7 +10,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #4C94FF;
+        max-height: 700px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        gap: 88px;
+        justify-content: center;
+        align-items: center;
+        // background: #ffffff;
+
+        @media (max-width: 480px) {
+            display: block;
+    }
+        // background: url('../images/video.mp4');
         padding: 40px 10px 0;
         .left_container{
             display: flex;
@@ -26,7 +39,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-            text-align: left;
+            // text-align: left;
         }
         .sub_heading{
             color: #FFF;
@@ -34,7 +47,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            text-align: left;
+            // text-align: left;
             padding-top: 24px;
         }
         .demo_button{

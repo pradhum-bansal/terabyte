@@ -15,11 +15,12 @@ import logo7 from "../assets/images/Logos-6.svg";
 import hero from '../assets/images/Hero-img.svg';
 import hero2 from '../assets/images/Hero-img-2.svg';
 import hero1 from '../assets/images/Hero-img-1.svg';
+import video from '../assets/images/video.mp4'
 import TeamCarousel from "../components/team-carousel";
 import testimonialbg from '../assets/images/testimonial_bg.svg';
 import { useNavigate } from "react-router";
 import { TestimonialCards } from "../const";
-import { Carousel } from "react-bootstrap";
+import styles from './home.module.scss';
 
 
 const Home = () => {
@@ -27,43 +28,35 @@ const Home = () => {
   const [testimonialCount, setTestimonialCount] = useState(0)
     return (
       <div className="home">
-        <div className="hero_container">
-          <div className="container left_container col-sm-12 col-lg-7 ">
-            <label className="heading">
-              Terabyte Innovations: Pioneering Software for a Connected Future
-            </label>
-            <div className="sub_heading">
-              Terabyte Innovations is at the forefront of software solutions,
-              particularly excelling in the development of smart hospital and
-              school management systems, CRM, and laboratory management
-              software.
+        <div className={styles.video_landing_container}>
+          <div className={styles.hero_section}>
+            <div className={styles.left_section}>
+              <div className={styles.heading}>
+                Terabyte Innovations: Pioneering Software for a Connected Future
+              </div>
+              <div className={styles.sub_heading}>
+                Terabyte Innovations is at the forefront of software solutions,
+                particularly excelling in the development of smart hospital and
+                school management systems, CRM, and laboratory management
+                software.
+                <button
+                  className={styles.demo_button}
+                  onClick={() => navigate("/request-demo")}
+                >
+                  Book a Demo
+                  <img src={arrow} alt="arrow" />
+                </button>
+              </div>
             </div>
-            <button
-              className="demo_button"
-              onClick={() => navigate("/request-demo")}
-            >
-              Book a Demo
-              <img src={arrow} alt="arrow" />
-            </button>
           </div>
-          <div className="col-sm-12 col-lg-5">
-            <Carousel
-              data-bs-theme="dark"
-              variant="dark"
-              controls={false}
-              indicators={false}
-            >
-              <Carousel.Item interval={1000}>
-                <img src={hero} className="hero_image" alt="..." />
-              </Carousel.Item>
-              <Carousel.Item interval={1000}>
-                <img src={hero2} className="hero_image" alt="..." />
-              </Carousel.Item>
-              <Carousel.Item interval={1000}>
-                <img src={hero1} className="hero_image" alt="..." />
-              </Carousel.Item>
-            </Carousel>
+          <div className={styles.video_container}>
+            <video autoPlay muted loop id="background-video">
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
+
+          <div className={styles.video_container_overlay}></div>
         </div>
         <div>
           <Counter />
@@ -126,7 +119,7 @@ const Home = () => {
                         style={{
                           background: `linear-gradient(0deg, rgba(51, 124, 207, 0.50) 0%, rgba(51, 124, 207, 0.50) 100%), url(${item.image1}), lightgray 50% / cover no-repeat`,
                           backgroundSize: "200px 300px",
-                          backgroundRepeat: 'no-repeat'
+                          backgroundRepeat: "no-repeat",
                         }}
                       ></div>
                     </div>
