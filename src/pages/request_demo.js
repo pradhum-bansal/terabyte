@@ -1,16 +1,24 @@
 import React from "react";
-import hero from '../assets/images/requestbanner.svg';
 import '../assets/scss/request_demo.scss';
 import arrow from '../assets/images/submit-arrow.svg';
 import Select from 'react-select';
 import { SelectCustomStyles } from "../const";
+import styles from '../pages/home.module.scss';
+import video from '../assets/images/video.mp4';
 const RequestDemo = () => {
     return (
       <div className="home">
-        <div className="hero_container">
-          <div className="container d-flex justify-content-center">
-            <img src={hero} alt="hero" width={500} height={300} />
+        <div className={styles.video_landing_container}>
+          <div className={styles.hero_section}>
           </div>
+          <div className={styles.video_container}>
+            <video autoPlay muted loop id="background-video">
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div className={styles.video_container_overlay}></div>
         </div>
         <div className="container py-5">
           <div className="heading">Request a demo</div>
@@ -67,7 +75,7 @@ const RequestDemo = () => {
               <div className="label">Message</div>
               <input type="text" className="w-100" />
             </div>
-            <div>
+            <div className="submit_button_container">
               <button className="submit_button">
                 Submit
                 <img src={arrow} width={24} height={24} alt="icon" />

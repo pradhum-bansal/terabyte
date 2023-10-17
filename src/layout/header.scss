@@ -1,6 +1,10 @@
 .header{
-    background: #4C94FF;
+    background: transparent;
     padding: 20px 160px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+
 }
 .right-menu{
     display: flex;
@@ -13,4 +17,13 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.header_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    opacity: 0.3;
 }
