@@ -70,6 +70,7 @@ const Home = () => {
           <div className="heading">OUR SERVICES</div>
           <ServiceCards />
         </div>
+        <span className={styles.anchor} id="3"></span>
         <div className="client_container d-flex">
           <div className="col-12 col-md-4 left_container">
             Empowering Success Together: Partnering with Countless Clients to
@@ -105,7 +106,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <span className={styles.anchor} id="3"></span>
         <div className="container testimonial-wrapper">
           <div className="test_heading">
             <img src={testimonialbg} alt="..." />
