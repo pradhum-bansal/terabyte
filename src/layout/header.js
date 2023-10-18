@@ -14,7 +14,7 @@ const Header = () => {
             />
           </div>
           <div className="right-menu">
-            <a className='link_container' href="#1">
+            <a className='link_container' href="/">
               <div>Home</div>
             </a>
             <a className='link_container' href="#2">
