@@ -28,6 +28,7 @@ const Home = () => {
   const [testimonialCount, setTestimonialCount] = useState(0)
     return (
       <div className="home">
+        <span className={styles.anchor} id="1"></span>
         <div className={styles.video_landing_container}>
           <div className={styles.hero_section}>
             <div className={styles.left_section}>
@@ -64,6 +65,7 @@ const Home = () => {
         <div>
           <CarouselComponent />
         </div>
+        <span className={styles.anchor} id="2"></span>
         <div className="our_services_container">
           <div className="heading">OUR SERVICES</div>
           <ServiceCards />
@@ -103,6 +105,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <span className={styles.anchor} id="3"></span>
         <div className="container testimonial-wrapper">
           <div className="test_heading">
             <img src={testimonialbg} alt="..." />
@@ -170,6 +173,7 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <span className={styles.anchor} id="4"></span>
         <div>
           <TeamCarousel />
         </div>

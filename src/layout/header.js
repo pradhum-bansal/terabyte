@@ -14,11 +14,18 @@ const Header = () => {
             />
           </div>
           <div className="right-menu">
-            <div>Home</div>
-            <div>About</div>
-            <div>Careers</div>
-            <div>Services</div>
-            <div>Contact</div>
+            <a className='link_container' href="#1">
+              <div>Home</div>
+            </a>
+            <a className='link_container' href="#2">
+              <div>Our Services</div>
+            </a>
+            <a className='link_container' href="#3">
+              <div>Clients</div>
+            </a>
+            <a className='link_container' href="#4">
+              <div>Our Team</div>
+            </a>
           </div>
         </div>
       </div>
