@@ -12,13 +12,10 @@ import logo4 from "../assets/images/Logos-3.svg";
 import logo5 from "../assets/images/Logos-5.svg";
 import logo6 from "../assets/images/Logos-4.svg";
 import logo7 from "../assets/images/Logos-6.svg";
-import hero from '../assets/images/Hero-img.svg';
-import hero2 from '../assets/images/Hero-img-2.svg';
-import hero1 from '../assets/images/Hero-img-1.svg';
 import video from '../assets/images/video.mp4'
 import TeamCarousel from "../components/team-carousel";
 import testimonialbg from '../assets/images/testimonial_bg.svg';
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { TestimonialCards } from "../const";
 import styles from './home.module.scss';
 

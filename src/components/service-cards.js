@@ -1,7 +1,7 @@
 import React from 'react';
 import bgimg from '../assets/images/background-image.svg';
 import { Carousel } from 'react-bootstrap';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 const ServiceCards = () => {
 
   const navigate = useNavigate();
