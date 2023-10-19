@@ -10,6 +10,18 @@ const RequestDemo = () => {
       <div className="home">
         <div className={styles.video_landing_container}>
           <div className={styles.hero_section}>
+            <div className={styles.left_section}>
+              <div className={styles.heading}>
+                Unleash Possibilities: Demo Delights Await
+              </div>
+              <div className={styles.sub_heading}>
+                Unlock the full potential of our offerings by requesting a
+                personalized demo tailored to your needs. Witness firsthand how
+                our solutions can elevate your business and drive success.
+                Request your demo now and embark on a journey of innovation and
+                efficiency.
+              </div>
+            </div>
           </div>
           <div className={styles.video_container}>
             <video autoPlay muted loop id="background-video">
