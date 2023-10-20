@@ -35,28 +35,28 @@ const RequestDemo = () => {
         <div className="container py-5">
           <div className="heading">Request a demo</div>
           <div className="form">
-            <div className="col-12 row px-5">
-              <div className="col-6">
+            <div className="col-12 row px-md-5">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Full Name*</div>
                 <input type="text" className="w-100" />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Email*</div>
                 <input type="text" className="w-100" />
               </div>
             </div>
-            <div className="col-12 row px-5">
-              <div className="col-6">
+            <div className="col-12 row px-md-5">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Organization*</div>
                 <input type="text" className="w-100" />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Contact Number</div>
                 <input type="text" className="w-100" />
               </div>
             </div>
-            <div className="col-12 row px-5">
-              <div className="col-6">
+            <div className="col-12 row px-md-5">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Region*</div>
                 <Select
                   placeholder=""
@@ -69,7 +69,7 @@ const RequestDemo = () => {
                   styles={SelectCustomStyles}
                 />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-md-6 py-3">
                 <div className="label">Industry Type*</div>
                 <Select
                   placeholder=""
@@ -83,7 +83,7 @@ const RequestDemo = () => {
                 />
               </div>
             </div>
-            <div className="col-12 row px-5">
+            <div className="col-12 row px-md-5">
               <div className="label">Message</div>
               <input type="text" className="w-100" />
             </div>

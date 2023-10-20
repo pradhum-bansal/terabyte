@@ -4,7 +4,6 @@
     z-index: 1;
     position: absolute;
     width: 100%;
-
 }
 .right-menu{
     display: flex;
@@ -37,4 +36,21 @@
     line-height: normal;
     text-decoration: none;
     cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+    .header{
+        padding: 20px;
+        // position: relative;
+        img{
+            width: 80px;
+            height: 50px;
+        }
+
+        .right-menu{
+            gap: 8px;
+            .link_container{
+                font-size: 10px;
+            }
+        }
+    }
 }

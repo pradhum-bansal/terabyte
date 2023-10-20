@@ -40,6 +40,9 @@
             font-weight: 600;
             line-height: normal;
             text-align: center;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
         .sub_heading{
             color: #FFF;
@@ -92,5 +95,38 @@
     .hero_section {
         position: absolute;
         z-index: 1;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .hero_section{
+        max-width: 100%;
+        // margin-top: 0px;
+
+        .heading{
+            font-size: 18px;
+            text-align: center;
+            }
+            .sub_heading{
+                font-size: 16px;
+                text-align: center;
+                padding: 16px 0;
+            }
+            .demo_button{
+                display: flex;
+                padding: 10px 18px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                margin: auto;
+                font-size: 16px;
+                margin: 20px auto;
+            }
+    }
+    .video_landing_container{
+        video{
+            min-height: 350px;
+        }
     }
 }

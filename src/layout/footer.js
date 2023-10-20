@@ -9,8 +9,8 @@ import twitter from '../assets/images/Twitter.svg'
 const Footer = () => {
     return (
       <div className="footer_container container">
-        <div className="footer_route_list">
-          <div className="route_list">
+        <div className="footer_route_list row">
+          <div className="route_list col-3 col-md-3">
             <div className="route_heading">Product</div>
             <div className="route">Employee database</div>
             <div className="route">Payroll</div>
@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="route">Shift planner</div>
             <div className="route">Recruiting</div>
           </div>
-          <div className="route_list">
+          <div className="route_list col-3 col-md-3">
             <div className="route_heading">Product</div>
             <div className="route">Employee database</div>
             <div className="route">Payroll</div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="route">Shift planner</div>
             <div className="route">Recruiting</div>
           </div>
-          <div className="route_list">
+          <div className="route_list col-3 col-md-3">
             <div className="route_heading">Product</div>
             <div className="route">Employee database</div>
             <div className="route">Payroll</div>
@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="route">Shift planner</div>
             <div className="route">Recruiting</div>
           </div>
-          <div className="subscribe_card">
+          <div className="subscribe_card col-6 col-md-3">
             <div className="card_heading">Subscribe</div>
 
             <div className="d-flex justify-content-start">
@@ -53,38 +53,29 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="divider"/>
-        <div className='social_cta_container'>
+        <hr className="divider" />
+        <div className="social_cta_container">
           <div>
             <img src={logo} alt="logo" />
           </div>
 
-          <div className='links_conteiner'>
-            <div className='link'>Terms</div>
+          <div className="links_conteiner">
+            <div className="link">Terms</div>
 
-            <div className='link'>Privacy</div>
+            <div className="link">Privacy</div>
 
-            <div className='link'>Cookies</div>
+            <div className="link">Cookies</div>
           </div>
 
-          <div className='links_conteiner'>
-            <div className='social_link'>
-              <img
-                src={linkedin}
-                alt="linkedin"
-              />
+          <div className="links_conteiner">
+            <div className="social_link">
+              <img src={linkedin} alt="linkedin" />
             </div>
-            <div className='social_link'>
-              <img
-                src={fb}
-                alt="facebook"
-              />
+            <div className="social_link">
+              <img src={fb} alt="facebook" />
             </div>
-            <div className='social_link'>
-              <img
-                src={twitter}
-                alt="twitter"
-              />
+            <div className="social_link">
+              <img src={twitter} alt="twitter" />
             </div>
           </div>
         </div>
