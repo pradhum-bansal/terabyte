@@ -100,10 +100,14 @@
     .footer_container{
         height: 1200px;
         .footer_route_list{
+            margin: 0 auto;
             gap: 10px;
+            .route_list{
+                gap: 10px;
+            }
             .route_heading , .route{
                 font-size: 18px !important;
-                line-height: 1.6;
+                line-height: 1.6 !important;
             }
         }
         .subscribe_card{

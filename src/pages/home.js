@@ -74,31 +74,31 @@ const Home = () => {
             Achieve Remarkable Milestones
           </div>
           <div className="col-12 col-md-8 d-flex justify-content-between flex-wrap right_container">
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo1} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo2} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo3} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo4} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo5} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo6} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo7} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo8} alt="logo1" />
             </div>
-            <div className="col-4 py-5 m-auto">
+            <div className="col-4 py-3 py-md-5 m-auto">
               <img src={logo9} alt="logo1" />
             </div>
           </div>

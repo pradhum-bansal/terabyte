@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './assets/scss/global.scss';
 import Footer from './layout/footer';
 import RoutesPath from './route/route';
+import $ from "jquery";
 
 function App() {
   return (

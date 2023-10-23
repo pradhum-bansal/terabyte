@@ -4,8 +4,12 @@
     z-index: 1;
     position: absolute;
     width: 100%;
+    img{
+            width: 150px;
+            height: 100px;
+        }
 }
-.right-menu{
+.navbar-nav{
     display: flex;
     justify-content: center;
     gap: 32px;
@@ -46,7 +50,7 @@
             height: 50px;
         }
 
-        .right-menu{
+        .navbar-nav{
             gap: 8px;
             .link_container{
                 font-size: 10px;
