@@ -32,7 +32,7 @@
     }
     .subscribe_card{
         background: rgba(32, 60, 134, 0.05);
-        width: 350px;
+        // width: 350px;
         height: 350px;
         padding: 40px 50px;
         display: flex;
@@ -98,21 +98,32 @@
 }
 @media only screen and (max-width: 768px){
     .footer_container{
-        height: 1200px;
+        height: 1100px;
         .footer_route_list{
             margin: 0 auto;
-            gap: 10px;
+            gap: 30px;
             .route_list{
                 gap: 10px;
             }
-            .route_heading , .route{
+            .route_heading{
                 font-size: 18px !important;
                 line-height: 1.6 !important;
+            }
+            .route{
+                font-size: 16px !important;
+                line-height: 1.4 !important;
             }
         }
         .subscribe_card{
             padding: 20px;
             height: 280px;
+            width: 350px;
+            .card_heading{
+                font-size: 18px !important;
+            }
+            .card_description{
+                font-size: 14px !important;
+            }
         }
     }
     .social_cta_container{

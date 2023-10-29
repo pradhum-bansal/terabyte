@@ -2,7 +2,7 @@
     background: transparent;
     padding: 20px 160px;
     z-index: 1;
-    position: absolute;
+    position: absolute !important;
     width: 100%;
     img{
             width: 150px;
@@ -43,7 +43,9 @@
 }
 @media only screen and (max-width: 768px){
     .header{
-        padding: 20px;
+        padding: 20px !important;
+        position: relative !important;
+        background: #212529 !important;
         // position: relative;
         img{
             width: 80px;

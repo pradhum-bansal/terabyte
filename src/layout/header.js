@@ -5,7 +5,7 @@ import './header.scss';
 const Header = () => {
     const [show, setShow] = useState(false);
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark header sticky-top">
+      <nav className="navbar navbar-expand-lg navbar-dark header sticky-top">
         <div>
           <a className="navbar-brand px-md-5" href="/">
             <img src={Logo} alt="logo" />
